@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 90%;
+}
+
+.heading {
+  color: #1d1d1f;
+  font-weight: 600;
+  text-align: center;
+  font-size: 26px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img {
+  width: 100%;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.list-item {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.title {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.info-text {
+  color: #3b3b3d;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.button {
+  border-radius: 4px;
+  background: #ff6200;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 10px;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 56px;
+  }
+
+  .content-container {
+    flex-direction: row;
+  }
+
+  .list-container {
+    height: 50%;
+    justify-content: space-around;
+  }
+  .img {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .info-text {
+    font-size: 15px;
+  }
+
+  .button {
+    padding: 16px 20px;
+  }
+}
